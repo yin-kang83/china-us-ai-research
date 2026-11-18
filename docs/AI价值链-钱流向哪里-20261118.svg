@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <style>
+      .title { font: bold 28px "Microsoft YaHei","PingFang SC",sans-serif; fill:#111; }
+      .sub { font: 15px "Microsoft YaHei","PingFang SC",sans-serif; fill:#555; }
+      .box { stroke:#222; stroke-width:2; rx:14; ry:14; }
+      .layer { font: bold 20px "Microsoft YaHei","PingFang SC",sans-serif; fill:#111; }
+      .num { font: bold 22px "Microsoft YaHei","PingFang SC",sans-serif; fill:#0b5; }
+      .small { font: 14px "Microsoft YaHei","PingFang SC",sans-serif; fill:#333; }
+      .arrow { stroke:#666; stroke-width:4; fill:none; marker-end:url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="#fafafa"/>
+  <text x="40" y="52" class="title">AI 价值链：钱流向哪里（2026-11-18）</text>
+  <text x="40" y="82" class="sub">各层收入不可直接相加；数据来自 SEC/公司公告/海关/公开报道；模型层私有公司不透明。</text>
+
+  <!-- L1 chips -->
+  <rect x="40" y="120" width="250" height="190" fill="#e8f5e9" class="box"/>
+  <text x="60" y="155" class="layer">L1 芯片/制造</text>
+  <text x="60" y="190" class="small">NVIDIA + TSMC + AMD + AVGO</text>
+  <text x="60" y="225" class="num">收入 ~$406B</text>
+  <text x="60" y="258" class="num">净利 ~$184B</text>
+  <text x="60" y="288" class="small">利润最集中；capex ~$38B</text>
+
+  <!-- L2 cloud -->
+  <rect x="340" y="120" width="250" height="190" fill="#e3f2fd" class="box"/>
+  <text x="360" y="155" class="layer">L2 云/DC</text>
+  <text x="360" y="190" class="small">AWS + Azure + Google Cloud</text>
+  <text x="360" y="225" class="num">收入 &gt;$318B</text>
+  <text x="360" y="258" class="num">capex 指引 ~$540B</text>
+  <text x="360" y="288" class="small">收入大，但 capex 更猛；FCF 承压</text>
+
+  <!-- L3 models -->
+  <rect x="640" y="120" width="250" height="190" fill="#fff3e0" class="box"/>
+  <text x="660" y="155" class="layer">L3 模型</text>
+  <text x="660" y="190" class="small">OpenAI / Anthropic / DeepSeek 等</text>
+  <text x="660" y="222" class="num">OpenAI ~$70B</text>
+  <text x="660" y="248" class="num">Anthropic &gt;$65B</text>
+  <text x="660" y="276" class="small">年化收入；盈利未证明</text>
+  <text x="660" y="298" class="small">开源+价格战，模型层最卷</text>
+
+  <!-- L4/L5 apps -->
+  <rect x="940" y="120" width="220" height="190" fill="#f3e5f5" class="box"/>
+  <text x="960" y="155" class="layer">L4/L5 平台/应用</text>
+  <text x="960" y="190" class="small">Microsoft / Alphabet / Meta 等</text>
+  <text x="960" y="225" class="num">收入 &gt;$1.4T</text>
+  <text x="960" y="258" class="num">AI 增量：难拆分</text>
+  <text x="960" y="288" class="small">广告/订阅/软件是变现终端</text>
+
+  <!-- arrows -->
+  <path d="M 290 215 L 335 215" class="arrow"/>
+  <path d="M 590 215 L 635 215" class="arrow"/>
+  <path d="M 890 215 L 935 215" class="arrow"/>
+
+  <!-- bottom flow -->
+  <rect x="40" y="400" width="360" height="150" fill="#fff" class="box"/>
+  <text x="60" y="435" class="layer">需求/资本开支</text>
+  <text x="60" y="470" class="small">云厂商/应用公司买算力、建 DC</text>
+  <text x="60" y="500" class="small">2026 capex 指引：MSFT/GOOGL/AMZN 合计</text>
+  <text x="60" y="528" class="num">约 $540B+</text>
+
+  <path d="M 220 395 L 220 315" class="arrow"/>
+  <path d="M 520 395 L 520 315" class="arrow"/>
+
+  <rect x="440" y="400" width="360" height="150" fill="#fff" class="box"/>
+  <text x="460" y="435" class="layer">“谁拿走钱”排序（短期）</text>
+  <text x="460" y="470" class="small">1. 芯片/制造：利润最厚</text>
+  <text x="460" y="498" class="small">2. 云/DC：收入大、capex 更大</text>
+  <text x="460" y="526" class="small">3. 平台/应用：变现终端，AI 增量待拆</text>
+
+  <rect x="840" y="400" width="320" height="150" fill="#fff" class="box"/>
+  <text x="860" y="435" class="layer">关键结论</text>
+  <text x="860" y="470" class="small">短期钱流向“卖铲子”</text>
+  <text x="860" y="498" class="small">模型层收入不透明、盈利未证明</text>
+  <text x="860" y="526" class="small">应用层收入最大，但 AI 增量难剥离</text>
+
+  <text x="40" y="660" class="sub">注：L1 为最近财年收入/净利；L2 为 AWS TTM + Azure FY2026 + Google Cloud run-rate；capex 为 2026 指引/年化估算；模型层私有公司未披露。各层重叠，不可相加。</text>
+</svg>
